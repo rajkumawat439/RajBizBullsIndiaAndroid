@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollfostatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginBottom="@dimen/toolbarsize"
+        android:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layouttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtcustomerid"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_roundlighorange"
+                    android:padding="@dimen/overrallspacing"
+                    android:text="BBDHJSDHJSDJSDNGFGDB"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/large_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtcustomername"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="4dp"
+                    android:text="BIZ BULLS INDIA"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtcustomerid" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_customerstatus"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_roundlighgreen"
+                    android:padding="@dimen/overrallspacing"
+                    android:text="Active"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imglocation"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="13dp"
+                    android:padding="@dimen/minimumspacing"
+                    android:src="@drawable/ic__location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtcustomername" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtcustomeraddress"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Krishna, Andhra Pradesh"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintBottom_toBottomOf="@+id/imglocation"
+                    app:layout_constraintStart_toEndOf="@+id/imglocation"
+                    app:layout_constraintTop_toTopOf="@+id/imglocation" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtcustomertime"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="07-11-2021 6:00PM"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imglocation" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtcustomertime" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutcustomerdata"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layouttitle">
+
+                <RelativeLayout
+                    android:id="@+id/kycstatuslayout"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/border_select"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtkyctitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtkyctitle">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgkycstatus"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_round" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtkyctitle"
+                    style="@style/fontregular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/c_kyc"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kycstatuslayout"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutkyc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:minHeight="52dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtkyctitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtkyctitle">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutkyccomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange_100"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtkycstatus"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Completed"
+                            android:textColor="@color/statusdark"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtkycdate"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
+                            android:text="081112021"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtkycstatus" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/txtkycdownload"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginEnd="6dp"
+                            android:background="@drawable/card_background"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:text="@string/c_download"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/small_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutkycincomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/button_background_redlight"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="16dp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtkycstatusincomplete"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Pending Approval"
+                            android:textColor="@color/statusred"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/line_kyc"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_700"
+                    android:maxHeight="52dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layoutkyc"
+                    app:layout_constraintEnd_toEndOf="@+id/kycstatuslayout"
+                    app:layout_constraintStart_toStartOf="@+id/kycstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/kycstatuslayout" />
+
+                <RelativeLayout
+                    android:id="@+id/registerstatuslayout"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/border_select"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_kyc">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgregisterstatus"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_btnround" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtregistertitle"
+                    style="@style/fontregular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Registration Fee"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kycstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/line_kyc" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/laoutregister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:minHeight="60dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtregistertitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtregistertitle">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/laoutregistercomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange_100"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtregisterstatus"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Completed"
+                            android:textColor="@color/statusdark"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtregisterdownload"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_download"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtregisterviewdetail"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_viewdetail"
+                            android:textColor="@color/orange_700"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtregisterdownload" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtregisterdate"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="081112021"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toStartOf="@+id/txtregisterviewdetail"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtregisterstatus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/laoutregisterincomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/button_background_redlight"
+                        android:minHeight="52dp"
+                        android:paddingBottom="@dimen/overrallspacing"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtregisterstatusincomplete"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="Rs. 25,000"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editpramocode"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/border_spinner"
+                            android:hint="Enter Promo Code"
+                            android:padding="6dp"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/small_font"
+                            app:layout_constraintBottom_toBottomOf="@+id/btnregister"
+                            app:layout_constraintStart_toEndOf="@+id/btnregister"
+                            app:layout_constraintTop_toTopOf="@+id/btnregister" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnregister"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_roundlighred"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:text="Pay Now"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_font"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/line_register"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_700"
+                    android:maxHeight="52dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/laoutregister"
+                    app:layout_constraintEnd_toEndOf="@+id/registerstatuslayout"
+                    app:layout_constraintStart_toStartOf="@+id/registerstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/registerstatuslayout" />
+
+
+                <RelativeLayout
+                    android:id="@+id/locationidentitylayout"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/border_select"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_register">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imglocationidentity"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_round" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtlocationidentitytitle"
+                    style="@style/fontregular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Location Update"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/registerstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/line_register" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutlocationidentity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:minHeight="52dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtlocationidentitytitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtlocationidentitytitle">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutlocationidentitycomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange_100"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlocationidentitystatus"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Completed"
+                            android:textColor="@color/statusdark"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlocationidentitydownload"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_download"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlocationidentityviewdetail"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_viewdetail"
+                            android:textColor="@color/orange_700"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtlocationidentitydownload" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlocationidentitydate"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="081112021"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toStartOf="@+id/txtlocationidentityviewdetail"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtlocationidentitystatus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutlocationidentityincomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:minHeight="52dp"
+                        android:paddingBottom="@dimen/overrallspacing"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlocationidentitypendingapproval"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Pending Approval"
+                            android:textColor="@color/statusred"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnaddlocationidentity"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_btnround"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:text="Update"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/line_locationidentity"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_700"
+                    android:maxHeight="52dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layoutlocationidentity"
+                    app:layout_constraintEnd_toEndOf="@+id/locationidentitylayout"
+                    app:layout_constraintStart_toStartOf="@+id/locationidentitylayout"
+                    app:layout_constraintTop_toBottomOf="@+id/locationidentitylayout" />
+
+
+                <RelativeLayout
+                    android:id="@+id/agreementstatuslayout"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/border_select"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_locationidentity">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgagreementstatus"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_round" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtagreementtitle"
+                    style="@style/fontregular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/c_agreement"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/locationidentitylayout"
+                    app:layout_constraintTop_toBottomOf="@+id/line_locationidentity" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutagreement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:minHeight="52dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtagreementtitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtagreementtitle">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutagreementcomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange_100"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtagreementstatus"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Completed"
+                            android:textColor="@color/statusdark"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtagreementdownload"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_download"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtagreementviewdetail"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_viewdetail"
+                            android:textColor="@color/orange_700"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtagreementdownload" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtagreementdate"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="081112021"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toStartOf="@+id/txtagreementviewdetail"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtagreementstatus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutagreementincomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:minHeight="52dp"
+                        android:paddingBottom="@dimen/overrallspacing"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtagreementpendingapproval"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Pending Approval"
+                            android:textColor="@color/statusred"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnaddagreement"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_btnround"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:text="Add Agreement"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/line_agreement"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_700"
+                    android:maxHeight="52dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layoutagreement"
+                    app:layout_constraintEnd_toEndOf="@+id/agreementstatuslayout"
+                    app:layout_constraintStart_toStartOf="@+id/agreementstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/agreementstatuslayout" />
+
+
+                <RelativeLayout
+                    android:id="@+id/setupstatuslayout"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/border_select"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_agreement">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgsetupstatus"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_round" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtsetuptitle"
+                    style="@style/fontregular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/c_setup"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/agreementstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/line_agreement" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutsetup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:minHeight="52dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtsetuptitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtsetuptitle">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutsetupcomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange_100"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtsetupstatus"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Completed"
+                            android:textColor="@color/statusdark"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtsetupdownload"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_download"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtsetupviewdetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/c_viewdetail"
+                            android:textColor="@color/orange_700"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtsetupdownload" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtsetupdate"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="081112021"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toStartOf="@+id/txtsetupviewdetail"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtsetupstatus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutsetupincomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:minHeight="52dp"
+                        android:paddingBottom="@dimen/overrallspacing"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtsetuppendingapproval"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Pending Approval"
+                            android:textColor="@color/statusred"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnaddsetup"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_btnround"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:text="Add Setup"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/line_setup"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/orange_700"
+                    android:maxHeight="52dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layoutsetup"
+                    app:layout_constraintEnd_toEndOf="@+id/setupstatuslayout"
+                    app:layout_constraintStart_toStartOf="@+id/setupstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/setupstatuslayout" />
+
+
+                <RelativeLayout
+                    android:id="@+id/licensestatuslayout"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/border_select"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_setup">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imglicensestatus"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_round" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtlicensetitle"
+                    style="@style/fontregular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/c_license"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/kycstatuslayout"
+                    app:layout_constraintTop_toBottomOf="@+id/line_setup" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutlicense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:minHeight="52dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txtlicensetitle"
+                    app:layout_constraintTop_toBottomOf="@+id/txtlicensetitle">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutlicensecomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange_100"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlicensestatus"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Completed"
+                            android:textColor="@color/statusdark"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlicensedate"
+                            style="@style/fontregular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
+                            android:text="081112021"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtlicensestatus" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutlicenseincomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:minHeight="52dp"
+                        android:paddingBottom="@dimen/overrallspacing"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtlicensependingapproval"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Pending Approval"
+                            android:textColor="@color/statusred"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnaddlicense"
+                            style="@style/fontregular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_btnround"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:text="Add License"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/medium_font"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtinfomsg"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/c_licensensehasbeen"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutlicense" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtviewcontactdetails"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_btnround"
+                    android:gravity="center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="Please Signout and Signin again!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/medium_font"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtinfomsg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutinfostatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtnostatusinfo"
+            style="@style/fontregular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/overrallspacing"
+            android:text="You haven't create any registration till date."
+            android:textColor="@color/heading"
+            android:textSize="@dimen/medium_font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

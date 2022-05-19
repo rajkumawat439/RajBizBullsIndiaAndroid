@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textinput_counter"
+        style="@style/fontsemibold"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_smallbutton"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtname"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Maulik Parmar"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintStart_toEndOf="@+id/textinput_counter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewname"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtname"
+        app:layout_constraintStart_toEndOf="@+id/txtname"
+        app:layout_constraintTop_toTopOf="@+id/txtname" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtsex"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="Male"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/txtname"
+        app:layout_constraintStart_toEndOf="@+id/viewname"
+        app:layout_constraintTop_toTopOf="@+id/txtname" />
+    <View
+        android:id="@+id/viewrelation"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtsex"
+        app:layout_constraintStart_toEndOf="@+id/txtsex"
+        app:layout_constraintTop_toTopOf="@+id/txtsex" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtage"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="16 yearls old"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/txtsex"
+        app:layout_constraintStart_toEndOf="@+id/viewrelation"
+        app:layout_constraintTop_toTopOf="@+id/txtsex" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtinsitutename"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="SAfrrony collage"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textinput_counter"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+    <View
+        android:id="@+id/viewinsitutename"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtinsitutename"
+        app:layout_constraintStart_toEndOf="@+id/txtinsitutename"
+        app:layout_constraintTop_toTopOf="@+id/txtinsitutename" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtboard"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="GTU"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/viewinsitutename"
+        app:layout_constraintStart_toEndOf="@+id/viewinsitutename"
+        app:layout_constraintTop_toTopOf="@+id/viewinsitutename"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

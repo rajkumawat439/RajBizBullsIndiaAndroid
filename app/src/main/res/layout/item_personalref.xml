@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textinput_counter"
+        style="@style/fontsemibold"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_smallbutton"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtname"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Maulik Parmar"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintStart_toEndOf="@+id/textinput_counter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewname"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtname"
+        app:layout_constraintStart_toEndOf="@+id/txtname"
+        app:layout_constraintTop_toTopOf="@+id/txtname" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtrelation"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="Sister"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/txtname"
+        app:layout_constraintStart_toEndOf="@+id/viewname"
+        app:layout_constraintTop_toTopOf="@+id/txtname" />
+    <View
+        android:id="@+id/viewrelation"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtrelation"
+        app:layout_constraintStart_toEndOf="@+id/txtrelation"
+        app:layout_constraintTop_toTopOf="@+id/txtrelation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtage"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="16 yearls old"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/txtrelation"
+        app:layout_constraintStart_toEndOf="@+id/viewrelation"
+        app:layout_constraintTop_toTopOf="@+id/txtrelation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtoccupation"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Bechlor engineering"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textinput_counter"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+    <View
+        android:id="@+id/vieweducation"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtoccupation"
+        app:layout_constraintStart_toEndOf="@+id/txtoccupation"
+        app:layout_constraintTop_toTopOf="@+id/txtoccupation" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtlocation"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Degree"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/vieweducation"
+        app:layout_constraintStart_toEndOf="@+id/vieweducation"
+        app:layout_constraintTop_toTopOf="@+id/vieweducation"/>
+    <View
+        android:id="@+id/viewoccupation"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtlocation"
+        app:layout_constraintStart_toEndOf="@+id/txtlocation"
+        app:layout_constraintTop_toTopOf="@+id/txtlocation" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtcontactnumber"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="9898710788"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/viewoccupation"
+        app:layout_constraintStart_toEndOf="@+id/viewoccupation"
+        app:layout_constraintTop_toTopOf="@+id/viewoccupation"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtloginweblink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/im_view"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/app_logo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtwelcome"
+                style="@style/fontregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Welcome to"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/medium_font"
+                app:layout_constraintTop_toBottomOf="@+id/im_view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtbullinfo"
+                style="@style/fontregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BIZ BULLS Franchising Pvt Ltd"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/medium_font"
+                app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_mobile_number"
+                style="@style/fontregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="8dp"
+                android:textColor="@color/heading"
+                android:textColorHint="@color/value"
+                android:textCursorDrawable="@color/heading"
+                android:textSize="@dimen/medium_font"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtbullinfo" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_mobile_number">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_password"
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/heading"
+                    android:textColorHint="@color/value"
+                    android:textCursorDrawable="@color/heading"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_showp_btn"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="14dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_password"
+                    app:layout_constraintEnd_toEndOf="@+id/et_password"
+                    app:layout_constraintTop_toTopOf="@+id/et_password"
+                    app:srcCompat="@drawable/ic_visibility_off"
+                    app:tint="@color/black" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_fgpassword"
+                style="@style/fontsemibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="Forgot Password?"
+                android:textColor="@color/orange_700"
+                android:textSize="@dimen/medium_font"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutpassword" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitlogin"
+                style="@style/fontregular"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_font"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fgpassword" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtloginweblink"
+        style="@style/fontregular"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/orange_700"
+        android:gravity="center"
+        android:text="www.bizbullsindia.com"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_font"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

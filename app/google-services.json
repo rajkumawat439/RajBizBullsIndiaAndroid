@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "776148871782",
+    "project_id": "bizbull-73798",
+    "storage_bucket": "bizbull-73798.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776148871782:android:9f2a5254120ef8744d9ba7",
+        "android_client_info": {
+          "package_name": "com.dharmesh.bizzbullindiaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776148871782-dj9kllurv43r6lc5o2gcapkgdrfa5v22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dharmesh.bizzbullindiaproject",
+            "certificate_hash": "cc4bf6e65c90d1b43200355f6e40bba0afeb7184"
+          }
+        },
+        {
+          "client_id": "776148871782-t1g8smq3uik8dh189bnfai61l4bburod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dharmesh.bizzbullindiaproject",
+            "certificate_hash": "fb9915e376efbb7a8103dc94c20499e56751cd75"
+          }
+        },
+        {
+          "client_id": "776148871782-87bmqb5cce4tajku4a9e7tb23oabl8dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3pQGpp-Iq7sTQjgmO3_7r-NVeZL1UcnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776148871782-87bmqb5cce4tajku4a9e7tb23oabl8dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

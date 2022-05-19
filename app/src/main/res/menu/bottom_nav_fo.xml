@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_fohome"
+        android:icon="@drawable/ic_emphome"
+        android:title="@string/fo_home" />
+
+    <item android:title="" />
+
+    <item
+        android:id="@+id/navigation_forevenue"
+        android:icon="@drawable/ic_emptracker"
+        android:title="@string/fo_status" />
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_home"-->
+<!--        android:icon="@drawable/ic_emphome"-->
+<!--        android:title="@string/emp_home" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_requests"-->
+<!--        android:icon="@drawable/ic_emprequest"-->
+<!--        android:title="@string/emp_requests" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_mybulls"-->
+<!--        android:icon="@drawable/ic_mybulls"-->
+<!--        android:title="@string/emp_mybulls" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_register"-->
+<!--        android:icon="@drawable/ic_empregister"-->
+<!--        android:title="@string/emp_register" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_tracker"-->
+<!--        android:icon="@drawable/ic_emptracker"-->
+<!--        android:title="@string/emp_tracker" />-->
+</menu>

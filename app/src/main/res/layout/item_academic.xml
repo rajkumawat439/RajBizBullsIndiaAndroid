@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textinput_counter"
+        style="@style/fontsemibold"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_smallbutton"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtqulaitification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtqulaitification"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Bachelor Engineering"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintStart_toEndOf="@+id/textinput_counter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewdegree"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtqulaitification"
+        app:layout_constraintStart_toEndOf="@+id/txtqulaitification"
+        app:layout_constraintTop_toTopOf="@+id/txtqulaitification" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtyearofpassing"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="2020"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/txtqulaitification"
+        app:layout_constraintStart_toEndOf="@+id/viewdegree"
+        app:layout_constraintTop_toTopOf="@+id/txtqulaitification" />
+    <View
+        android:id="@+id/viewpassing"
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_smallbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/txtyearofpassing"
+        app:layout_constraintStart_toEndOf="@+id/txtyearofpassing"
+        app:layout_constraintTop_toTopOf="@+id/txtyearofpassing" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtpercentageexam"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:text="100%"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="@+id/txtyearofpassing"
+        app:layout_constraintStart_toEndOf="@+id/viewpassing"
+        app:layout_constraintTop_toTopOf="@+id/txtyearofpassing" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtinsitutename"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Board: GTU"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textinput_counter"
+        app:layout_constraintTop_toBottomOf="@+id/txtqulaitification" />
+</androidx.constraintlayout.widget.ConstraintLayout>

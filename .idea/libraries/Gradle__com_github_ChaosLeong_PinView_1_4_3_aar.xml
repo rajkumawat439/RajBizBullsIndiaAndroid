@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ChaosLeong:PinView:1.4.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b3978cae4098cc94d6d398beedbc13d8/transformed/PinView-1.4.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b3978cae4098cc94d6d398beedbc13d8/transformed/PinView-1.4.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b3978cae4098cc94d6d398beedbc13d8/transformed/PinView-1.4.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ChaosLeong/PinView/1.4.3/604563fa8fbbec96788674b9d5ea5c302102e08d/PinView-1.4.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ChaosLeong/PinView/1.4.3/597a0f477451ce8abdbf142bf5ff73cc881fa802/PinView-1.4.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">BizzbullIndiaProject</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="signup">Signup</string>
+    <string name="dashes">****</string>
+    <color name="light_grey">#afb1b3</color>
+    <color name="very_light_grey">#DBDBDB</color>
+
+
+    <!--     MENU -->
+    <string name="makemoney">Make more money!</string>
+    <string name="becomeacap">Become a Captain</string>
+    <string name="completeprofile">Complete your profile</string>
+    <string name="menupayment">My Account</string>
+    <string name="menumyrides">My Referrals</string>
+    <string name="menurefer">My Offers</string>
+    <string name="menuvalet">My Valet</string>
+    <string name="menurewards">About us</string>
+    <string name="menupowerpass">Terms &amp; Conditions</string>
+    <string name="menunotify">Privacy Policy</string>
+    <string name="menuclaims">Register Complaint</string>
+    <string name="menucontactus">Contact us</string>
+    <string name="menufollowus">Follow us</string>
+    <string name="menurateus">Rate us</string>
+    <string name="menusetting">Settings</string>
+    <string name="menulogout">Logout</string>
+
+    <!--     MENU -->
+    <string name="fo_home">Home</string>
+    <string name="fo_status">Status</string>
+
+    <string name="bizbullmobile">8977362436</string>
+    <string name="bizbullemail">contactus@bizbullsindia.com</string>
+    <string name="bizbullinfoone">BIZ BULLS is a licensing company between a Franchisor and a Franchisee. We thoroughly check both parties, analyse the project, verify its credibility, project the success ratio; Hire credible franchisees with a passion in business, responsible towards project and work for both company and franchisee growth.
+    \n\n we are the industry experts of talented beings who believe in expanding and extending opportunities in the best ways. We innovate and execute the Finest Methodology for the budding Entrepreneurs to grow their thriving business to an extent as a franchisor. We enable both qualitative and quantitative approaches to make sure that, as a franchisor, you can reach the targeted audience to convince them about your business. On the other hand, we help the Franchisees take every possible step to build a business that they desire to witness. We promote Franchisors, giving utmost value to their brand, and formulate innovative methods to approach budding entrepreneurs and expand their business as per the requirement.
+    \n\n
+        Our vision is growing together in leaps and bounds, offering the most edge-cutting upgraded service to the desired future entrepreneurs.
+    </string>
+
+    <string name="c_statustracking">Status Tracking</string>
+    <string name="c_kyc">KYC</string>
+    <string name="c_setup">Setup</string>
+    <string name="c_agreement">Agreement</string>
+    <string name="c_license">License</string>
+    <string name="c_download"><u>Download</u></string>
+    <string name="c_viewdetail"><u>View Details</u></string>
+    <string name="c_viewcdetail">View Contact Details</string>
+    <string name="c_licensensehasbeen">License has been issued</string>
+
+    <!--     Franchiese Registration -->
+    <string name="f_submit">Submit</string>
+    <string name="f_registration">Franchise Registration</string>
+    <string name="f_personaldetail">Personal Details</string>
+    <string name="f_healthdetail">Health Details</string>
+    <string name="f_exinterest">Expression of Interest in BIZ BULLS Franchise</string>
+    <string name="f_checklist">Checklist for franchisee understanding</string>
+    <string name="f_academic">Academic / Education Details</string>
+    <string name="f_socialidentity">Social Identity Details</string>
+    <string name="f_bankacct">Bank Account Details (for financial processes with us)</string>
+    <string name="f_familydetail">Family Details</string>
+    <string name="f_childdetail">Children Details (If any)</string>
+    <string name="f_personalref">Personal References (If any) – other than family</string>
+    <string name="f_attachmentenclosed">Attachments to be enclosed, with this form</string>
+    <string name="f_auth">Authorization</string>
+    <!--     Peronsal Detail -->
+    <string name="ct_fullname">Full Name</string>
+    <string name="ct_writefullname">Full name</string>
+    <string name="ct_fathername">Father’s Name</string>
+    <string name="ct_writefathername">Father’s name</string>
+    <string name="ct_mothername">Mother’s Maiden name</string>
+    <string name="ct_writemothername">Enter mother’s Maiden name</string>
+    <string name="ct_dob">Date of Birth</string>
+    <string name="ct_sex">Sex</string>
+    <string name="ct_male">Male</string>
+    <string name="ct_female">Female</string>
+    <string name="ct_placeofbirth">Place of Birth</string>
+    <string name="ct_writeplaceofbirth">Place of birth</string>
+    <string name="ct_mothertongue">Mother Tongue</string>
+    <string name="ct_writemothertongue">Mother tongue</string>
+    <string name="ct_maritalstatus">Marital Status</string>
+    <string name="ct_single">Single</string>
+    <string name="ct_married">Married</string>
+    <string name="ct_separated">Separated</string>
+    <string name="ct_widowed">Widowed</string>
+    <string name="ct_contactnumber">Contact Number</string>
+    <string name="ct_writecontactnumber">Contact number</string>
+    <string name="ct_altnumber">Alternate Number</string>
+    <string name="ct_writealtnumber">Alternate number</string>
+    <string name="ct_whatnumber">Whatsapp Number</string>
+    <string name="ct_writewhatsupnumber">Whatsapp number</string>
+    <string name="ct_emailid">Email ID</string>
+    <string name="ct_writeemail">Email id</string>
+    <string name="ct_permenentadrs">Permanent Address</string>
+    <string name="ct_writepermenentadrs">Residential address</string>
+    <string name="ct_presentadrs">Present Address</string>
+    <string name="ct_writepresentadrs">Write a present address</string>
+    <string name="ct_accommodationtype">Accommodation Type</string>
+    <string name="ct_writeaccommodationtype">Rent/own/Hostel/Bachelor/</string>
+    <string name="ct_accommodationsince">Accommodation Since</string>
+    <string name="ct_writeaccommodationsince">Accommodation since</string>
+    <string name="ct_proofsub">Proof submitted</string>
+    <string name="ct_writeproofsub">Proof submitted</string>
+    <string name="ct_emergencycontact">Emergency Contact Number </string>
+    <string name="ct_writeemergencycontact">Emergency contact number </string>
+    <string name="ct_dcnumber">Document Number</string>
+    <string name="ct_writedcnumber">Document number</string>
+    <!--     HealthDetail -->
+    <string name="ct_birthidentificationmarks">Birth Identification Marks</string>
+    <string name="ct_onemarks">1)</string>
+    <string name="ct_twomarks">2)</string>
+    <string name="ct_handuse">Hand Use</string>
+    <string name="ct_heightin">Height in Cms</string>
+    <string name="ct_weightin">Weight in Kgs</string>
+    <string name="ct_bloodgroup">Blood Group </string>
+    <string name="ct_willingtodonate">Willing to donate</string>
+    <string name="ct_ifwillingtodonate">Willing to donate? If yes then write here</string>
+    <string name="ct_ifyeshandicappy">Physically handicapped? If yes then write here</string>
+    <string name="ct_ifyessurgeries">Any Surgeries/Treatments Undergone? If yes then write here</string>
+    <string name="ct_ifyeshelathissues">Any other health issues? If yes then write here</string>
+    <string name="ct_ifyesunhealthyhabits">Any unhealthy Habits? If yes then write here</string>
+    <string name="ct_phsicallyhandi">Physically Handicapped</string>
+    <string name="ct_typeofph">Type of PH</string>
+    <string name="ct_surgeries">Surgeries/Treatments Undergone</string>
+    <string name="ct_typeofsurgery">Type of Surgery</string>
+    <string name="ct_anyhealthissue">Any other Health Issues</string>
+    <string name="ct_pleasemention">Please Mention</string>
+    <string name="ct_anyunhealthyhabits">Any unhealthy Habits</string>
+    <!--     Expression of Interest in BIZ BULLS Franchise -->
+    <string name="ct_interestedprojectname">Interested Project Name</string>
+    <string name="ct_interestedprojectvalue">BIZ BULLS India</string>
+    <string name="ct_industryprojectname">Industry of Project</string>
+    <string name="ct_industryprojectvalue">Business Franchising</string>
+    <string name="ct_locatinterest">Location of Interest</string>
+    <string name="ct_locatinterestvalue">Location of Interest (District or State Name)</string>
+    <string name="ct_financeassit">Write a Financial Assistance</string>
+    <string name="ct_financeassitvalue">Full Investment / Partial Loan / Full Loan / Seeking Investor</string>
+    <string name="ct_registrationfee">Registration Fee</string>
+    <string name="ct_registrationfeevalue">Rs. 25,000/- (Non-refundable &amp; will be deducted from total investment amount)</string>
+    <string name="ct_franchiseplaningfor">Write a Franchisee Planning for</string>
+    <string name="ct_franchiseplaningforvalue">Self / Other – (Please mention)</string>
+    <string name="ct_franchiseplaningas">Write a Franchisee Planning as</string>
+    <string name="ct_franchiseplaningavalue">Sole Ownership / Partnership (Separate form to be attached)</string>
+    <string name="ct_businessplacetype">Write a Business Place Type (Owned / Leased / Rented)</string>
+    <string name="ct_businessplacetypevalue">Owned / Leased / Rented</string>
+    <string name="ct_buzplacesize">Business Place Size</string>
+    <string name="ct_buzplacesizevalue">Area of Place in Sq.ft</string>
+    <!--     Social Identity Details -->
+    <string name="ct_aadharcardnumber">Aadhaar Card Number</string>
+    <string name="ct_writeaadharcardnumber">Aadhaar card number</string>
+    <string name="ct_drivinglicense">Driving Licence No</string>
+    <string name="ct_writedrivinglicense">Driving license no</string>
+    <string name="ct_pancardno">PAN Card No</string>
+    <string name="ct_writepancardno">Pan card no</string>
+    <string name="ct_passportno">Passport No.</string>
+    <string name="ct_writepassportno">Passport no</string>
+    <string name="ct_voterno">Voter Card No</string>
+    <string name="ct_writevoterno">Voter card no</string>
+    <string name="ct_rationno">Ration Card No</string>
+    <string name="ct_writerationno">Ration card no</string>
+    <!--     Bank Account Details (for financial processes with us) -->
+    <string name="ct_bankname">Bank Name</string>
+    <string name="ct_writebankname">Bank name</string>
+    <string name="ct_bankactname">Name (as in account)</string>
+    <string name="ct_writebankactname">Name </string>
+    <string name="ct_acctnumb">Account Number</string>
+    <string name="ct_writeacctnumb">Account number</string>
+    <string name="ct_branch">Branch</string>
+    <string name="ct_writebranch">Branch name</string>
+    <string name="ct_ifsccode">IFSC Code</string>
+    <string name="ct_writeifsccode">Ifsc code</string>
+    <string name="ct_accounttype">Type</string>
+    <string name="ct_writeaccunttupe">Account type</string>
+    <!--     Checklist for franchisee understanding -->
+    <string name="ct_checklistagree">By understanding the below checklist, you authorize BIZ BULLS India to operate on behalf of you, for any business proceedings hereon.</string>
+    <string name="ct_checkone">Whether you meet all our eligibility criteria, mentioned in our brochure.</string>
+    <string name="ct_checktwo">Whether you spend the required amount of time to run the business.</string>
+    <string name="ct_checkthree">Whether Business registration support required for your franchise.</string>
+    <string name="ct_checkfour">Whether Business Loan support required for your project investment.</string>
+    <string name="ct_checkfive">Whether you accept &amp;amp; undergo timely Business training offered by company.</string>
+    <string name="ct_checksix">Whether you accept for company referred office set-up or such by BIZ BULLS tied-up 3rd party partners or group company partners.</string>
+    <string name="ct_checkseven">Whether you understood &amp; comply with all terms &amp; conditions of our franchising.</string>
+    <string name="ct_checkeight">Whether you understand that until your business launch, you are only authorized to keep in contact with BIZ BULLS team, and not authorized to contact any of our client/partner or such, for whatever might be the reason, unless it is authorized by our company.</string>
+    <string name="ct_checknine">Whether you understand that BIZ BULLS India has no relation to the business of clients’ projects.</string>
+    <string name="ct_checkten">Whether you understand that a franchisee shall completely be your responsibility under the company guidelines and terms of operation.</string>
+    <!--     Attachments to be enclosed, with this form -->
+    <string name="ct_attachmentinfo">Please attach legible counter signed true copies of the following documents. Please tick the concerned box, before the attachment that you are enclosing.</string>
+    <string name="ct_checkeleven">PAN Card</string>
+    <string name="ct_checktwelve">Aadhaar Card</string>
+    <string name="ct_checkthirteen">Residential Address Proof</string>
+    <string name="ct_checkfourtin">Recent Photograph of applicant</string>
+    <string name="ct_checkfiftin">Individually filled &amp; signed copies of this form (in case of partnership)</string>
+    <!--     Authorization -->
+    <string name="ct_authinfo">I certify that all the information given in this application is true to the best of my knowledge.</string>
+    <string name="ct_authinfoone">Should any information stated by me in this application be in-correct, my association / License with you is liable to immediate termination without refund of any payment.</string>
+    <string name="ct_authinfotwo">I declare that I have not been convicted previously by any court of law nor have bad report from any institution or individual.</string>
+    <string name="ct_authinfothree">Should there be any changes in the particulars given by me in this application ,I shall immediately inform the organization about the same.</string>
+    <string name="ct_i">i)</string>
+    <string name="ct_ii">ii)</string>
+    <string name="ct_iii">iii)</string>
+    <string name="ct_ichilddetail">Child Detail</string>
+    <string name="ct_childname">Name</string>
+    <string name="ct_childwriteaname">Name</string>
+    <string name="ct_childage">Age</string>
+    <string name="ct_childwriteage">age</string>
+    <string name="ct_childsex">Sex</string>
+    <string name="ct_childwritesex">sex</string>
+    <string name="ct_childstaywith">Statys With</string>
+    <string name="ct_childwritestaywith">place where he/she stay</string>
+    <string name="ct_ipersonalrefdetail">Personal Reference Detail</string>
+    <string name="ct_perrefname">Name</string>
+    <string name="ct_perrefwriteaname">Name</string>
+    <string name="ct_perrefrelation">Relation</string>
+    <string name="ct_perrefwritearelation">Relation</string>
+    <string name="ct_perrefage">Age</string>
+    <string name="ct_perrefwriteaage">Age</string>
+    <string name="ct_perrefoccupation">Occupation</string>
+    <string name="ct_perrefwriteaoccupation">Occupation</string>
+    <string name="ct_perreflocation">Location</string>
+    <string name="ct_perrefwritealocation">Location</string>
+    <string name="ct_perrefnumber">Contact Number</string>
+    <string name="ct_perrefwriteanumber">Contact number</string>
+    <string name="ct_perrefaddress">Address</string>
+    <string name="ct_perrefwriteaddress">Address</string>
+    <string name="ct_perrefmonthlyincome">Monthly Income</string>
+    <string name="ct_perrefwritemonthlyincome">Monthly income</string>
+    <string name="ct_perrefeducation">Education</string>
+    <string name="ct_perrefwriteeducation">Education</string>
+    <!--     FamilyDetail -->
+    <string name="ct_ifamilydetail">Family Detail</string>
+
+    <!-- Accademic Detail -->
+    <string name="ct_iacademinc">i) Academic/Education Detail</string>
+
+    <string name="ct_qualification">Qualification(with specialization)</string>
+    <string name="ct_writequalification">Qualification</string>
+    <string name="ct_institute">Institution Name</string>
+    <string name="ct_writeinstitute">Institution Name</string>
+    <string name="ct_board">Board/university</string>
+    <string name="ct_writeboard">Board/university</string>
+    <string name="ct_passing">Year of Passing</string>
+    <string name="ct_writepassing">Year</string>
+    <string name="ct_percentage">% Secured</string>
+    <string name="ct_writepercentage">percentage</string>
+
+    <string name="loading">Please Wait……</string>
+
+</resources>

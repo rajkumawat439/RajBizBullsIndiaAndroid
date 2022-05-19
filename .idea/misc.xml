@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dharmesh/Personal/MyBizzBullIndiaProject/app/src/main/res/layout/activity_createnewpassword.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dharmesh/Personal/MyBizzBullIndiaProject/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_createnewpassword.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_dashboard.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_forgotpassword.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_franchiseeregistration.xml" value="0.264" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_login.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_projectinfo.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_signup.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/activity_splash.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/app_bar_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/content_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/dialog_familydetails.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/dialog_otp.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/fo_header_main.xml" value="0.1" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/fragment_home.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/fragment_signup.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/fragment_status.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_academic.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_child.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_family.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_franchiese.xml" value="0.6" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_image_slider.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_personalref.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/item_retailhousehold.xml" value="0.4" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/itemfoodbeverages.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/itemlist.xml" value="0.6" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/login.xml" value="0.23802083333333332" />
+        <entry key="..\:/bizzbullindia/app/src/main/res/layout/signin.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_franchiseeregistration.xml" value="0.34074074074074073" />
+        <entry key="app/src/main/res/layout/activity_projectinfo.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.35625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="jsonEditor">
+    <option name="stateMap">
+      <map>
+        <entry key="MyBizzBullIndiaProject" value="{&#10;  &quot;franchdetails&quot;: {&#10;    &quot;businessplacesize&quot;: &quot;10&quot;,&#10;    &quot;businessplacetype&quot;: &quot;Owned&quot;,&#10;    &quot;financialassistance&quot;: &quot;Moj 3.0&quot;,&#10;    &quot;franchiseplaingas&quot;: &quot;party &quot;,&#10;    &quot;franchiseplaningfor&quot;: &quot;Enjoying&quot;,&#10;    &quot;locationofinterest&quot;: &quot;Goa&quot;,&#10;    &quot;userid&quot;: &quot;8460445851&quot;&#10;  },&#10;  &quot;task&quot;: &quot;&quot;,&#10;  &quot;userid&quot;: &quot;&quot;&#10;}" />
+      </map>
+    </option>
+  </component>
+</project>

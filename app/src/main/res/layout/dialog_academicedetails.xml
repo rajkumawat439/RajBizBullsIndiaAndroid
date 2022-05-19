@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_button">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtacademicdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/f_academic"
+        android:textColor="@color/orange_700"
+        style="@style/fontsemibold"
+        android:textSize="@dimen/medium_font"
+        />
+    <View
+        android:id="@+id/lineaccademicone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/border"
+         />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtacconequalitfication"
+        style="@style/fontregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/ct_writequalification"
+        android:inputType="textCapWords"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtacconeinstitute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_writeinstitute"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtacconeboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_writeboard"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtacconeyear"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="wrap_content"
+            android:hint="@string/ct_writepassing"
+            android:inputType="number"
+            android:background="@drawable/edit_text_background"
+            android:padding="@dimen/textboxpadding"
+            android:textColor="@color/heading"
+            android:textColorHint="@color/heading"
+            android:textCursorDrawable="@color/heading"
+            android:textSize="@dimen/medium_font"
+            style="@style/fontregular" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtacconepassing"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="wrap_content"
+            android:hint="@string/ct_writepercentage"
+            android:inputType="number"
+            android:background="@drawable/edit_text_background"
+            android:padding="@dimen/textboxpadding"
+            android:textColor="@color/heading"
+            android:textColorHint="@color/heading"
+            android:textCursorDrawable="@color/heading"
+            android:textSize="@dimen/medium_font"
+            style="@style/fontregular" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="20dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btncancelacademic"
+            style="@style/fontsemibold"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="@dimen/dialogbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_label"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/heading"
+            android:textSize="@dimen/large_font" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnsubmitacademic"
+            style="@style/fontsemibold"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="@dimen/dialogbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_round"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+    </LinearLayout>
+</LinearLayout>

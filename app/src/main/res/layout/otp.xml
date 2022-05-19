@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_appLogo"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:gravity="center"
+        android:text="Welcome to"
+        android:textColor="@color/text_grey_dark"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_appLogo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_enterOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:gravity="center"
+        android:text="Please enter OTP here"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_welcome" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_bySubmitting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="By submitting here, you read and accept all\nterms &amp; privacy policy"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinView" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:cursorVisible="false"
+        android:hint="@string/dashes"
+        android:inputType="number"
+        android:itemBackground="@color/divider_grey_color"
+        android:textColor="@color/colorLogout"
+        android:textColorHint="@color/colorLogout"
+        android:textSize="@dimen/_14sdp"
+        app:fontFamily="@font/poppins_semi_bold"
+        app:hideLineWhenFilled="false"
+        app:itemCount="6"
+        app:itemHeight="@dimen/_33sdp"
+        app:itemRadius="2dp"
+        app:itemSpacing="5dp"
+        app:itemWidth="@dimen/_33sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enterOTP"
+        app:lineColor="@color/lightest_grey"
+        app:lineWidth="1dp"
+        app:viewType="rectangle" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btSubmit"
+        style="@style/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:paddingHorizontal="@dimen/_40sdp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12sdp"
+        app:fontFamily="@font/poppins_semi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_bySubmitting"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

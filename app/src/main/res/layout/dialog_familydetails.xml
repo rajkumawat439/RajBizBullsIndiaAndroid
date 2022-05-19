@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_button">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtfamilydetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/ct_ifamilydetail"
+        android:textColor="@color/orange_700"
+        style="@style/fontsemibold"
+        android:textSize="@dimen/medium_font"
+        />
+    <View
+        android:id="@+id/lineaccademicone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/border"
+         />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtfamilyname"
+        style="@style/fontregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/ct_perrefwriteaname"
+        android:inputType="textCapWords"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtfamilyrelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefwritearelation"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtfamilyage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefage"
+        android:inputType="number"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edteducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefeducation"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtoccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefoccupation"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtmonthlyincome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefmonthlyincome"
+        android:inputType="number"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtcontactnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefnumber"
+        android:inputType="number"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/ct_perrefwriteaddress"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="4"
+        android:overScrollMode="always"
+        android:background="@drawable/edit_text_background"
+        android:padding="@dimen/textboxpadding"
+        android:textColor="@color/heading"
+        android:textColorHint="@color/heading"
+        android:textCursorDrawable="@color/heading"
+        android:textSize="@dimen/medium_font"
+        style="@style/fontregular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="20dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btncancelfamily"
+            style="@style/fontsemibold"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="@dimen/dialogbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_label"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/heading"
+            android:textSize="@dimen/large_font" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnsubmitfamily"
+            style="@style/fontsemibold"
+            android:layout_width="0dp"
+            android:layout_weight="2.4"
+            android:layout_height="@dimen/dialogbtn"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_round"
+            android:gravity="center"
+            android:text="@string/f_submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_font" />
+    </LinearLayout>
+</LinearLayout>

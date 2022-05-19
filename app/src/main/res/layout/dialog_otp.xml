@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_button"
+    >
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/im_view"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtwelcome"
+        style="@style/fontregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Welcome to"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtbullinfo"
+        style="@style/fontregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="BIZ BULLS Franchising Pvt Ltd"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_otp_text"
+        style="@style/fontsemibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="center"
+        android:text="Verification Code"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/exlarge_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbullinfo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtotpinfo"
+        style="@style/fontregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="18dp"
+        android:gravity="center"
+        android:text="We have sent the code verification to Your Mobile Number"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/medium_font"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_otp_text" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/MyParentType.List"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtotpinfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_1_p"
+                style="@style/MyTextInputLayoutOutlinedBox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_1"
+                    style="@style/MyTextInputEditText"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:text="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_2_p"
+                style="@style/MyTextInputLayoutOutlinedBox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_2"
+                    style="@style/MyTextInputEditText"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    tools:text="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_3_p"
+                style="@style/MyTextInputLayoutOutlinedBox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_3"
+                    style="@style/MyTextInputEditText"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    tools:text="3" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_4_p"
+                style="@style/MyTextInputLayoutOutlinedBox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_4"
+                    style="@style/MyTextInputEditText"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    tools:text="4" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_5_p"
+                style="@style/MyTextInputLayoutOutlinedBox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_5"
+                    style="@style/MyTextInputEditText"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    tools:text="4" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_6_p"
+                style="@style/MyTextInputLayoutOutlinedBox"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_6"
+                    style="@style/MyTextInputEditText"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    tools:text="4" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitverify"
+        style="@style/fontregular"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_font"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

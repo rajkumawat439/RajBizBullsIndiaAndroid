@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/minimumspacing"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sliderfodashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imgsliderfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/slidersize"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/overrallspacing"
+                android:layout_marginTop="@dimen/overrallspacing"
+                android:layout_marginEnd="@dimen/overrallspacing"
+                android:background="@drawable/card_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/fontregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/minimumspacing"
+                        android:text="Partner with us (Register your FO)"
+                        android:textColor="@color/orange_700"
+                        android:textSize="@dimen/medium_font" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/fontregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/minimumspacing"
+                        android:text="With zero registration fee &amp; around 20 lakhs per month earning capacity"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/small_font" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/fontregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/minimumspacing"
+                        android:text="in both FOFO &amp; FOCO Franchising model"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/small_font" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/cardsize"
+                        android:layout_height="@dimen/cardsize"
+                        android:layout_marginBottom="@dimen/minimumspacing"
+                        app:cardBackgroundColor="@color/light_orange"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:cardMaxElevation="3dp">
+
+                        <ImageView
+                            android:id="@+id/iv_top_small_card"
+                            android:layout_width="@dimen/toolbarsize"
+                            android:layout_height="@dimen/cardsize"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/biz_bulls" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/tv_registration"
+                        style="@style/fontregular"
+                        android:layout_width="@dimen/cardsize"
+                        android:layout_height="@dimen/smallbutton"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button"
+                        android:gravity="center"
+                        android:text="Register"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/extrasmall_font" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtservices"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:gravity="center"
+                    android:text="Services"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtservicesviewall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtservices" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtleads"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:gravity="center"
+                    android:text="Franchising projects"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtfoodviewall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerleads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtleads" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtfranchise"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:gravity="center"
+                    android:text="Franchisee Services"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtfranchiseviewall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_franchise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtfranchise" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="92dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtleads1"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:gravity="center"
+                    android:text="Franchisor Services"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/txtCompanyRegistration"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/smallbutton"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="@dimen/overrallspacing"
+                    android:layout_marginEnd="@dimen/sub_heading"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:text=" Register my project "
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/extrasmall_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_rental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtleads1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttitletwo"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Beauty &amp; Health"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttwoall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitletwo" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_two" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttitlethree"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Education"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtthreeall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitlethree" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_three" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtfashion"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Retail And Household"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtretailviewall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_fashion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtfashion" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_fashion" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttitlefour"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Automotive &amp; Spares"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtfourall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitlefour" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_four" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttitlefive"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Fashion &amp; Textile"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtfiveall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitlefive" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_five" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttitlesix"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Sports, Fitness &amp; Entertainment"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtsixall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitlesix" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_six" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/minimumspacing"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_roundwhite"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintscope">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txttitleagriculture"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Agri &amp; Organic Products"
+                    android:textColor="@color/orange_700"
+                    android:textSize="@dimen/medium_font"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtagricultureall"
+                    style="@style/fontregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+
+                    android:layout_marginEnd="12dp"
+                    android:gravity="center"
+
+                    android:text="View All"
+                    android:textColor="@color/facebook_color"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_agriculture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="@dimen/minimumspacing"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttitleagriculture" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/fontregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:gravity="left"
+                    android:padding="@dimen/minimumspacing"
+                    android:text="*Projects of this industry are in progress for your location. Please visit again.*"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/small_font"
+                    app:layout_constraintTop_toBottomOf="@id/rv_agriculture" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

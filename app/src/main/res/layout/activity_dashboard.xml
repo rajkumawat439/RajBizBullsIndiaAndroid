@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerfomainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DashboardActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/toolbarh"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/orange_700"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/layoutdraweropen"
+                    android:layout_width="@dimen/toolbarsize"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="4dp">
+
+                    <ImageView
+                        android:id="@+id/imgdrawer"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_menu" />
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/layoutsearch"
+                    android:layout_toEndOf="@+id/layoutdraweropen"
+                    app:layout_constraintStart_toStartOf="@+id/layoutsearch">
+
+                    <ImageView
+                        android:id="@+id/imgdownlocation"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/ic_downdark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtlcoationname"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtlcoationname"
+                        style="@style/fontregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Ahmedabad"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_font"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutsearch"
+                    android:layout_width="@dimen/toolbarsize"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_toStartOf="@+id/layoutnotification">
+
+                    <ImageView
+                        android:id="@+id/imgsearch"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icsearch" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutnotification"
+                    android:layout_width="@dimen/toolbarsize"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_toStartOf="@+id/layouthelp">
+
+                    <ImageView
+                        android:id="@+id/imgnotification"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_notification" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layouthelp"
+                    android:layout_width="@dimen/toolbarsize"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="2dp">
+
+                    <ImageView
+                        android:id="@+id/imghelp"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_help" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/flFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:background="@color/orange_700"
+            android:backgroundTint="@color/orange_700"
+            app:fabCradleMargin="4dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                app:itemIconTint="@color/white"
+                app:itemRippleColor="@color/orange_700"
+                app:itemTextAppearanceActive="@color/white"
+                app:itemTextAppearanceInactive="@color/orange_500"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_nav_fo" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange_200"
+            android:backgroundTint="@color/orange_200"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/bullicon"
+            app:backgroundTint="@color/orange_200"
+            app:borderWidth="1dp"
+            app:layout_anchor="@id/bottomAppBar"
+            app:maxImageSize="40dp" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        android:nestedScrollingEnabled="true"
+        app:headerLayout="@layout/fo_header_main"
+        app:itemIconTint="@color/white" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

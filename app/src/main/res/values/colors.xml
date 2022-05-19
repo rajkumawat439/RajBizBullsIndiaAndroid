@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="orange_500">#DD8349</color>
+    <color name="orange_700">#C25B19</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_grey_dark">#585858</color>
+    <color name="colorPrimary">#C05A1D</color>
+    <color name="colorPrimaryDark">#C05A1D</color>
+    <color name="colorAccent">#C05A1D</color>
+
+    <color name="category_bg">#F3EFFF</color>
+    <color name="divider_grey_color">#E5E5E5</color>
+    <color name="colorLogout">#083f5e</color>
+    <color name="lightest_grey">#F4F4F4</color>
+    <color name="orange_100">#fff7f2</color>
+    <color name="orange_200">#F6DAC8</color>
+    <color name="heading">#333333</color>
+    <color name="value">#555353</color>
+    <color name="border">#939393</color>
+    <color name="bg_layout">#EDEDED</color>
+
+    <color name="yellow">#efd42e</color>
+    <color name="light_orange">#FCF1ED</color>
+    <color name="facebook_color">#4267B2</color>
+    <color name="button_background_redlight">#fffafa</color>
+    <color name="button_background_light">#E6FFF5</color>
+    <color name="statusdark">#049a5b</color>
+    <color name="statusred">#ff6c52</color>
+</resources>
